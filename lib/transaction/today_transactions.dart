@@ -181,6 +181,14 @@ class TodayTransactions extends StatelessWidget {
                   itemCount: transactions.length,
                   itemBuilder: (context, index) {
                     return ListTile(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TransactionReceipt(),
+                          ),
+                        );
+                      },
                       leading: CircleAvatar(
                         backgroundColor: Theme.of(context).hintColor,
                         foregroundColor: Theme.of(context).primaryColor,
