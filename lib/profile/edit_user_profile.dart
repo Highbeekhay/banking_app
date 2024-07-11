@@ -38,7 +38,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
                   ),
                   Text(
                     'Edit Profile',
-                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                    style: Theme.of(context).textTheme.bodyMedium,
                   )
                 ],
               ),
@@ -76,14 +76,14 @@ class _EditUserProfileState extends State<EditUserProfile> {
                     ),
                     Text(
                       'Nicki Akbaripour',
-                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(),
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     Text(
                       '0919 - 999 5588',
-                      style: Theme.of(context).textTheme.bodySmall!.copyWith(),
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),
@@ -93,7 +93,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
               ),
               Text(
                 'Full Name',
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 5,
@@ -120,7 +120,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
               ),
               Text(
                 'Date of Birth',
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 5,
@@ -147,7 +147,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
               ),
               Text(
                 'Sex',
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               Row(
                 children: [
@@ -162,7 +162,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
                   ),
                   Text(
                     'Female',
-                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                    style: Theme.of(context).textTheme.bodyMedium,
                   ),
                   const SizedBox(
                     width: 40,
@@ -178,7 +178,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
                   ),
                   Text(
                     'Male',
-                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                    style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
               ),
@@ -187,7 +187,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
               ),
               Text(
                 'Current City',
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 5,

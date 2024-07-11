@@ -1,3 +1,4 @@
+import 'package:banking_app/models/transactions.dart';
 import 'package:banking_app/transaction/transaction_receipt.dart';
 import 'package:flutter/material.dart';
 
@@ -6,6 +7,104 @@ class TodayTransactions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Transactions> transactions = [
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Internet Package',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '427,000',
+      ),
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Receive Money',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '10,000,000',
+      ),
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Send Money',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '5,000,000',
+      ),
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Recharge SIM Card',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '500,000',
+      ),
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Internet Package',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '427,000',
+      ),
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Mobile Bill',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '800,000',
+      ),
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Send Money',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '12,000,000',
+      ),
+      Transactions(
+        leading: const CircleAvatar(
+          radius: 25,
+          child: Icon(
+            Icons.online_prediction_sharp,
+            size: 30,
+          ),
+        ),
+        title: 'Internet Package',
+        subtitle: '03:30 pm . March 25, 2024',
+        trailing: '427,000',
+      ),
+    ];
     return Scaffold(
       body: SingleChildScrollView(
         physics: const AlwaysScrollableScrollPhysics(),
@@ -30,7 +129,7 @@ class TodayTransactions extends StatelessWidget {
                   ),
                   Text(
                     'Transaction',
-                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                    style: Theme.of(context).textTheme.bodyMedium,
                   )
                 ],
               ),
@@ -47,10 +146,7 @@ class TodayTransactions extends StatelessWidget {
                       children: [
                         Text(
                           'Today',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         IconButton(
                           onPressed: () {},
@@ -79,222 +175,33 @@ class TodayTransactions extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              ListTile(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TransactionReceipt(),
-                    ),
-                  );
-                },
-                leading: Stack(
-                  alignment: Alignment.bottomRight,
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: Theme.of(context).hintColor,
-                      foregroundColor: Theme.of(context).primaryColor,
-                      radius: 25,
-                      child: const Icon(
-                        Icons.online_prediction_sharp,
-                        size: 30,
+              Container(
+                height: 400,
+                child: ListView.builder(
+                  itemCount: transactions.length,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Theme.of(context).hintColor,
+                        foregroundColor: Theme.of(context).primaryColor,
+                        radius: 25,
+                        child: transactions[index].leading,
                       ),
-                    ),
-                    CircleAvatar(
-                      backgroundColor: Theme.of(context).splashColor,
-                      foregroundColor: Colors.green,
-                      radius: 12,
-                      child: const Icon(
-                        Icons.arrow_upward_sharp,
-                        size: 15,
+                      title: Text(
+                        transactions[index].title,
+                        style: Theme.of(context).textTheme.bodyMedium,
                       ),
-                    ),
-                  ],
+                      subtitle: Text(
+                        transactions[index].subtitle,
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                      trailing: Text(
+                        transactions[index].trailing,
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                    );
+                  },
                 ),
-                title: Text(
-                  'Internet Package',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '427,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              ListTile(
-                onTap: () {},
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).hintColor,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  radius: 25,
-                  child: const Icon(
-                    Icons.online_prediction_sharp,
-                  ),
-                ),
-                title: Text(
-                  'Receive Money',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '10,000,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              ListTile(
-                onTap: () {},
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).hintColor,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  radius: 25,
-                  child: const Icon(
-                    Icons.online_prediction_sharp,
-                  ),
-                ),
-                title: Text(
-                  'Send Money',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '5,000,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              ListTile(
-                onTap: () {},
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).hintColor,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  radius: 25,
-                  child: const Icon(
-                    Icons.online_prediction_sharp,
-                  ),
-                ),
-                title: Text(
-                  'Recharge SIM Card',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '500,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              ListTile(
-                onTap: () {},
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).hintColor,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  radius: 25,
-                  child: const Icon(
-                    Icons.online_prediction_sharp,
-                  ),
-                ),
-                title: Text(
-                  'Internet Package',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '427,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              ListTile(
-                onTap: () {},
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).hintColor,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  radius: 25,
-                  child: const Icon(
-                    Icons.online_prediction_sharp,
-                  ),
-                ),
-                title: Text(
-                  'Mobile Bill',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '800,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              ListTile(
-                onTap: () {},
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).hintColor,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  radius: 25,
-                  child: const Icon(
-                    Icons.online_prediction_sharp,
-                  ),
-                ),
-                title: Text(
-                  'Send Money',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '12,000,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              ListTile(
-                onTap: () {},
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).hintColor,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  radius: 25,
-                  child: const Icon(
-                    Icons.online_prediction_sharp,
-                  ),
-                ),
-                title: Text(
-                  'Internet Package',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-                subtitle: Text(
-                  '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
-                ),
-                trailing: Text(
-                  '427,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
-                ),
-              ),
-              const Divider(),
-              const SizedBox(
-                height: 30,
               ),
             ],
           ),

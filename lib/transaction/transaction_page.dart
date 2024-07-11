@@ -147,10 +147,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Transfer',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -173,10 +170,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Balance',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -199,10 +193,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Report',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -225,10 +216,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Scan',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -251,10 +239,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Add',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -285,17 +270,11 @@ class TransactionPage extends StatelessWidget {
                         children: [
                           Text(
                             'Recent Transfer',
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(),
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
                           Text(
                             'See all',
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleMedium!
-                                .copyWith(),
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ],
                       ),
@@ -322,10 +301,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Alex',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -346,10 +322,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Tara',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -370,10 +343,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Moses',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -394,10 +364,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Ali',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -418,10 +385,7 @@ class TransactionPage extends StatelessWidget {
                               ),
                               Text(
                                 'Tania',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(),
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           ),
@@ -435,10 +399,7 @@ class TransactionPage extends StatelessWidget {
                         children: [
                           Text(
                             'Recent Transactions',
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(),
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
                           TextButton(
                             onPressed: () {
@@ -452,10 +413,7 @@ class TransactionPage extends StatelessWidget {
                             },
                             child: Text(
                               'See all',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleMedium!
-                                  .copyWith(),
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ),
                         ],
@@ -479,24 +437,15 @@ class TransactionPage extends StatelessWidget {
                         ),
                         title: Text(
                           'Internet Package',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         subtitle: Text(
                           '03:30 pm . March 25, 2024',
-                          style: Theme.of(context)
-                              .textTheme
-                              .titleMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.titleMedium,
                         ),
                         trailing: Text(
                           '427,000',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                       const Divider(),
@@ -512,24 +461,15 @@ class TransactionPage extends StatelessWidget {
                         ),
                         title: Text(
                           'Send Money',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         subtitle: Text(
                           '09:27 am . March 24, 2024',
-                          style: Theme.of(context)
-                              .textTheme
-                              .titleMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.titleMedium,
                         ),
                         trailing: Text(
                           '427,000',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                       const Divider(),

@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
             left: 10,
             bottom: 10,
           ),
-          hintStyle: Theme.of(context).textTheme.bodySmall!.copyWith(),
+          hintStyle: Theme.of(context).textTheme.bodySmall,
           border: InputBorder.none,
         ),
         filledButtonTheme: const FilledButtonThemeData(
@@ -163,11 +163,11 @@ class MyHomePage extends StatelessWidget {
                 ),
                 Text(
                   'Nicki',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 Text(
                   'Hi again! Good \nto see you',
-                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
                 const SizedBox(
                   height: 20,
@@ -177,7 +177,7 @@ class MyHomePage extends StatelessWidget {
                   children: [
                     Text(
                       'Common Services',
-                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     IconButton(
                       onPressed: () {},
@@ -221,10 +221,7 @@ class MyHomePage extends StatelessWidget {
                                 ),
                                 Text(
                                   'Recharge',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .bodySmall!
-                                      .copyWith(),
+                                  style: Theme.of(context).textTheme.bodySmall,
                                 )
                               ],
                             ),
@@ -252,10 +249,7 @@ class MyHomePage extends StatelessWidget {
                                 ),
                                 Text(
                                   'Internet',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .bodySmall!
-                                      .copyWith(),
+                                  style: Theme.of(context).textTheme.bodySmall,
                                 )
                               ],
                             ),
@@ -283,10 +277,7 @@ class MyHomePage extends StatelessWidget {
                                 ),
                                 Text(
                                   'Transfer',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .bodySmall!
-                                      .copyWith(),
+                                  style: Theme.of(context).textTheme.bodySmall,
                                 )
                               ],
                             ),
@@ -301,7 +292,7 @@ class MyHomePage extends StatelessWidget {
                 ),
                 Text(
                   'Other Services',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(
                   height: 20,
@@ -329,10 +320,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                             Text(
                               'QR Code',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyMedium!
-                                  .copyWith(),
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),
@@ -358,10 +346,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                             Text(
                               'Balance',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyMedium!
-                                  .copyWith(),
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),
@@ -395,10 +380,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                             Text(
                               'Bill',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyMedium!
-                                  .copyWith(),
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),
@@ -424,10 +406,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                             Text(
                               'Charity',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyMedium!
-                                  .copyWith(),
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),

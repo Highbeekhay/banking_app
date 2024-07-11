@@ -59,17 +59,11 @@ class UserProfile extends StatelessWidget {
                         children: [
                           Text(
                             'Nicki Akbaripour',
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(),
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
                           Text(
                             '0919 - 999 5588',
-                            style: Theme.of(context)
-                                .textTheme
-                                .labelSmall!
-                                .copyWith(),
+                            style: Theme.of(context).textTheme.labelSmall,
                           ),
                           FilledButton(
                             onPressed: () {},
@@ -81,10 +75,7 @@ class UserProfile extends StatelessWidget {
                                 ),
                                 Text(
                                   '225',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .bodyMedium!
-                                      .copyWith(),
+                                  style: Theme.of(context).textTheme.bodyMedium,
                                 ),
                               ],
                             ),
@@ -125,10 +116,7 @@ class UserProfile extends StatelessWidget {
                         ),
                         title: Text(
                           'Notifications',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -142,10 +130,7 @@ class UserProfile extends StatelessWidget {
                         ),
                         title: Text(
                           'Competition',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -164,10 +149,7 @@ class UserProfile extends StatelessWidget {
                         ),
                         title: Text(
                           'Call to support',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -181,10 +163,7 @@ class UserProfile extends StatelessWidget {
                         ),
                         title: Text(
                           'Privacy Policy',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -198,10 +177,7 @@ class UserProfile extends StatelessWidget {
                         ),
                         title: Text(
                           'About Us',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -218,7 +194,7 @@ class UserProfile extends StatelessWidget {
                     ),
                     title: Text(
                       'Exit',
-                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ),
                 ),

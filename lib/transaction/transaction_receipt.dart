@@ -33,27 +33,27 @@ class TransactionReceipt extends StatelessWidget {
                 ),
                 title: Text(
                   'Internet Package',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 subtitle: Text(
                   '03:30 pm . March 25, 2024',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
               ListTile(
                 leading: Text(
                   'Amount',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 trailing: Text(
                   '427,000',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
               ListTile(
                 leading: Text(
                   'Transactions Status',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 trailing: OutlinedButton(
                   style: OutlinedButton.styleFrom(
@@ -78,8 +78,7 @@ class TransactionReceipt extends StatelessWidget {
                       ),
                       Text(
                         'Success',
-                        style:
-                            Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                        style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     ],
                   ),
@@ -88,41 +87,41 @@ class TransactionReceipt extends StatelessWidget {
               ListTile(
                 leading: Text(
                   'From',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 trailing: Text(
                   '6219 - 8610 - 1234 - 5678',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
               ListTile(
                 leading: Text(
                   'Number',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 trailing: Text(
                   '0919 999 5588',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
               ListTile(
                 leading: Text(
                   'Issue Tracking',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 trailing: Text(
                   '51545465123215645',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
               ListTile(
                 leading: Text(
                   'Reference No',
-                  style: Theme.of(context).textTheme.titleMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 trailing: Text(
                   '32121214541',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
               const SizedBox(
