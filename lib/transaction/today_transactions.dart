@@ -1,6 +1,7 @@
 import 'package:banking_app/models/transactions.dart';
 import 'package:banking_app/transaction/transaction_receipt.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TodayTransactions extends StatelessWidget {
   const TodayTransactions({super.key});
@@ -117,7 +118,7 @@ class TodayTransactions extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      Get.back();
                     },
                     icon: Icon(
                       Icons.arrow_back_ios,

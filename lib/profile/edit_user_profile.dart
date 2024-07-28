@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:timemojis/timemojis.dart';
 
 class EditUserProfile extends StatefulWidget {
@@ -26,7 +27,7 @@ class _EditUserProfileState extends State<EditUserProfile> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      Get.back();
                     },
                     icon: Icon(
                       Icons.arrow_back_ios,

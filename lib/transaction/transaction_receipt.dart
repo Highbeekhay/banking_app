@@ -1,5 +1,5 @@
-import 'package:banking_app/transaction/transaction_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TransactionReceipt extends StatelessWidget {
   const TransactionReceipt({super.key});
@@ -205,12 +205,8 @@ class TransactionReceipt extends StatelessWidget {
                   backgroundColor: Theme.of(context).primaryColor,
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TransactionPage(),
-                    ),
-                  );
+                  Get.back();
+                  Navigator.pop(context);
                 },
                 child: Text(
                   'Back to Home',

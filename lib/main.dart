@@ -3,6 +3,7 @@ import 'package:banking_app/profile/user_profile.dart';
 import 'package:banking_app/services/service_page.dart';
 import 'package:banking_app/transaction/transaction_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     Color primaryColor = Colors.indigoAccent.shade700;
     Color selectedColor = Colors.indigoAccent.shade700;
 
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         hintColor: Colors.grey.shade200,
@@ -428,11 +429,8 @@ class MyHomePage extends StatelessWidget {
           NavigationDestination(
             icon: IconButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ServicePage(),
-                  ),
+                Get.to(
+                  const ServicePage(),
                 );
               },
               icon: const Icon(
@@ -445,11 +443,8 @@ class MyHomePage extends StatelessWidget {
           NavigationDestination(
             icon: IconButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const CardPage(),
-                  ),
+                Get.to(
+                  const CardPage(),
                 );
               },
               icon: const Icon(
@@ -461,10 +456,11 @@ class MyHomePage extends StatelessWidget {
           NavigationDestination(
             icon: IconButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const TransactionPage(),
+                Get.to(
+                  const TransactionPage(),
+                  transition: Transition.zoom,
+                  duration: const Duration(
+                    milliseconds: 1000,
                   ),
                 );
               },
@@ -477,11 +473,8 @@ class MyHomePage extends StatelessWidget {
           NavigationDestination(
             icon: IconButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const UserProfile(),
-                  ),
+                Get.to(
+                  const UserProfile(),
                 );
               },
               icon: const Icon(
