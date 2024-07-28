@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Transactions {
+class Transaction {
   final CircleAvatar leading;
   final String title;
   final String subtitle;
   final String trailing;
 
-  Transactions({
+  Transaction({
     required this.leading,
     required this.title,
     required this.subtitle,

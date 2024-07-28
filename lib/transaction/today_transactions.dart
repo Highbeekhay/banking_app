@@ -1,4 +1,4 @@
-import 'package:banking_app/models/transactions.dart';
+import 'package:banking_app/models/transaction.dart';
 import 'package:banking_app/transaction/transaction_receipt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -8,8 +8,8 @@ class TodayTransactions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Transactions> transactions = [
-      Transactions(
+    List<Transaction> transaction = [
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -21,7 +21,7 @@ class TodayTransactions extends StatelessWidget {
         subtitle: '03:30 pm . March 25, 2024',
         trailing: '427,000',
       ),
-      Transactions(
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -33,7 +33,7 @@ class TodayTransactions extends StatelessWidget {
         subtitle: '03:30 pm . March 25, 2024',
         trailing: '10,000,000',
       ),
-      Transactions(
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -45,7 +45,7 @@ class TodayTransactions extends StatelessWidget {
         subtitle: '03:30 pm . March 25, 2024',
         trailing: '5,000,000',
       ),
-      Transactions(
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -57,7 +57,7 @@ class TodayTransactions extends StatelessWidget {
         subtitle: '03:30 pm . March 25, 2024',
         trailing: '500,000',
       ),
-      Transactions(
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -69,7 +69,7 @@ class TodayTransactions extends StatelessWidget {
         subtitle: '03:30 pm . March 25, 2024',
         trailing: '427,000',
       ),
-      Transactions(
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -81,7 +81,7 @@ class TodayTransactions extends StatelessWidget {
         subtitle: '03:30 pm . March 25, 2024',
         trailing: '800,000',
       ),
-      Transactions(
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -93,7 +93,7 @@ class TodayTransactions extends StatelessWidget {
         subtitle: '03:30 pm . March 25, 2024',
         trailing: '12,000,000',
       ),
-      Transactions(
+      Transaction(
         leading: const CircleAvatar(
           radius: 25,
           child: Icon(
@@ -179,33 +179,30 @@ class TodayTransactions extends StatelessWidget {
               Container(
                 height: 400,
                 child: ListView.builder(
-                  itemCount: transactions.length,
+                  itemCount: transaction.length,
                   itemBuilder: (context, index) {
                     return ListTile(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const TransactionReceipt(),
-                          ),
+                        Get.to(
+                          const TransactionReceipt(),
                         );
                       },
                       leading: CircleAvatar(
                         backgroundColor: Theme.of(context).hintColor,
                         foregroundColor: Theme.of(context).primaryColor,
                         radius: 25,
-                        child: transactions[index].leading,
+                        child: transaction[index].leading,
                       ),
                       title: Text(
-                        transactions[index].title,
+                        transaction[index].title,
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                       subtitle: Text(
-                        transactions[index].subtitle,
+                        transaction[index].subtitle,
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       trailing: Text(
-                        transactions[index].trailing,
+                        transaction[index].trailing,
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     );
